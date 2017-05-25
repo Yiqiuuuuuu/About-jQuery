@@ -5,13 +5,13 @@ Selector | Example | Selects
 
 #id | $("#lastname")	| The element with id="lastname"
 
-.class  | 	$(".intro")	 |  All elements with class="intro"
+.class | $(".intro") | All elements with class="intro"
 
-.class,.class	 | $(".intro,.demo") | 	All elements with the class "intro" or "demo"
+.class,.class | $(".intro,.demo") | All elements with the class "intro" or "demo"
 
-element | 	$("p")	 | All <p> elements
+element | $("p") | All <p> elements
 
-el1,el2,el3	 | $("h1,div,p")	 | All <h1>, <div> and <p> elements
+el1,el2,el3 | $("h1,div,p") | All <h1>, <div> and <p> elements
  	 	 
 :first | 	$("p:first")	 | The first <p> element
 
