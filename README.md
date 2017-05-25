@@ -2,8 +2,8 @@
 
 Selector | Example | Selects
 ---------|---------|--------
-* | $("*") | All elements
 #id | $("#lastname")	| The element with id="lastname"
+
 .class  | 	$(".intro")	 |  All elements with class="intro"
 .class,.class	 | $(".intro,.demo") | 	All elements with the class "intro" or "demo"
 element | 	$("p")	 | All <p> elements
