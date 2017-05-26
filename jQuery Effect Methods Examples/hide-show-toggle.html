@@ -21,6 +21,8 @@
         });
     </script>
     <!-- END script -->
+    
+    <!-- BEGIN style -->
     <style>
         .container {
             width:50%;
@@ -29,34 +31,48 @@
         }
         p.notes {
             color:#d65cad;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
-        p.notesA {
-            color:#e085c2;
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
             font-size: 20px;
-            font-weight: 800;
+            padding:5px;
         }
         button {
             border-radius: 8px;    
         }
+        #demo {
+            font-size: 20px;
+        }
         
     </style>
+    <!-- END style -->
 </head>
     
     
 <body>
     <div class="container">
-        <p class="notes">Notes:<br>
-            $(selector).hide(speed,callback);<br>
-            $(selector).show(speed,callback);<br>
-            $(selector).toggle(speed,callback);
-        </p>
+        <p class="notes">Notes:</p>
+        <ul>
+            <li>$(selector).hide(speed,callback);</li>
+            <li>$(selector).show(speed,callback);</li>
+            <li>$(selector).toggle(speed,callback);</li>
+        </ul>
         
-        <p class="notesA"> speed parameter: "slow", "fast", or milliseconds.<br>
-            callback parameter: a function to be executed after toggle() completes.
-        </p>
+        <p class="notes">Explanations:</p>
+        <ul>
+            <li>speed parameter: "slow", "fast", or milliseconds.</li>
+            <li>callback parameter: a function to be executed after toggle() completes.</li>
+        </ul>
+            
         
+        <p class="notes">Examples:</p>
         <p id="demo">If I click on the "Hide" button, this paragraph will disappear.</p>
         <button id="hide">Hide</button>
         <button id="show">Show</button>
