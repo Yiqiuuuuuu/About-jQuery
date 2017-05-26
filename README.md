@@ -10,9 +10,9 @@
 | dequeue()     | Removes the next function from the queue, and then executes the function     |
 | finish()      | Stops, removes and completes all queued animations for the selected elements |
 | queue()       | Shows the queued functions on the selected elements                          |
-| slideDown()   | Slides-down (shows) the selected elements                                    |
-| slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
-| slideUp()     | Slides-up (hides) the selected elements                                      |
+| :droplet:slideDown()   | Slides-down (shows) the selected elements                                    |
+| :droplet:slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
+| :droplet:slideUp()     | Slides-up (hides) the selected elements                                      |
 | stop()        | Stops the currently running animation for the selected elements              |
 | :exclamation:hide()      | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
 | :exclamation:show()      | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
