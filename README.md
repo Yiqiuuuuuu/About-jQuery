@@ -7,7 +7,7 @@
 | .class               | $(".intro")                | All elements with class="intro"                                                                                 |
 | .class,.class        | $(".intro,.demo")          | All elements with the class "intro" or "demo"                                                                   |
 | element              | $("p")                     | All "<p>" elements                                                                                                |
-| el1,el2,el3          | $("h1,div,p")              | All <h1> <div> <p> elements                                                                                |
+| el1,el2,el3          | $("h1,div,p")              | <p> All <h1> <div> <p> elements</p>                                                                                |
 |                      |                            |                                                                                                                 |
 | :first               | $("p:first")               | The first <p> element                                                                                           |
 | :last                | $("p:last")                | The last <p> element                                                                                            |
