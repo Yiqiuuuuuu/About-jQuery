@@ -151,14 +151,14 @@
 | fadeTo()      | Fades in/out the selected elements to a given opacity                        |
 | fadeToggle()  | Toggles between the fadeIn() and fadeOut() methods                           |
 | finish()      | Stops, removes and completes all queued animations for the selected elements |
-| hide()        | Hides the selected elements                                                  |
+| <font color="#ff1a8c">hide()</font>       | Hides the selected elements <font color="#ff1a8c">$(selector).hide(speed,callback);<font>                                                  |
 | queue()       | Shows the queued functions on the selected elements                          |
-| show()        | Shows the selected elements                                                  |
+| <font color="#ff1a8c">show()</font>        | Shows the selected elements <font color="#ff1a8c">$(selector).show(speed,callback);<font>                                                  |
 | slideDown()   | Slides-down (shows) the selected elements                                    |
 | slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
 | slideUp()     | Slides-up (hides) the selected elements                                      |
 | stop()        | Stops the currently running animation for the selected elements              |
-| toggle()      | Toggles between the hide() and show() methods                                |
+| <font color="#ff1a8c">toggle()</font>     | Toggles between the hide() and show() methods    <font color="#ff1a8c">$(selector).toggle(speed,callback);<font>                              |
 
 
 
