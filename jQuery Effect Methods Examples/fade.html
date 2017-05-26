@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- BEGIN script -->
+    <script>
+        $(document).ready(function(){
+            $("#in").click(function(){
+                $("#demo").fadeIn("slow");
+            });
+            
+            $("#out").click(function(){
+                $("#demo").fadeOut("5000");
+            })
+            
+            $("#toggle").click(function(){
+                $("#demo").fadeToggle("fast");
+            })
+            
+            $("#to").click(function(){
+                $("#demo").fadeTo("3000","0.2");
+            })
+        });
+    </script>
+    <!-- BEGIN script -->
+    
+    <!-- BEGIN style -->
+    <style>
+        .container {
+            width:60%;
+            margin:auto;
+            display:block;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
+            font-size: 20px;
+            padding:5px;
+        }
+        button {
+            border-radius: 8px;    
+        }
+        #demo {
+            background-color: #e085c2;
+            width: 80px;
+            height:80px;
+            border-radius:10px;
+            display:none;
+        }
+        
+    </style>
+    <!-- END style -->
+</head>
+<body>
+    <div class="container">
+        <p class="notes">Notes</p>
+        <ul>
+            <li>$(selector).fadeIn(speed,callback);</li>
+            <li>$(selector).fadeOut(speed,callback);</li>
+            <li>$(selector).fadeToggle(speed,callback);</li>
+            <li>$(selector).fadeTo(speed,opacity,callback);</li>
+        </ul>
+        
+        <p class="notes">Explanation</p>
+        <ul>
+            <li>speed parameter: specifies the duration of the effect (values: "slow", "fast", or milliseconds).</li>
+            <li>opacity parameter in the fadeTo() method: specifies fading to a given opacity (value between 0 and 1).</li>
+            <li>back parameter: a function to be executed after the function completes.</li>
+        </ul>
+        
+        <p class="notes">Examples:</p><br><br>
+        <button id="in">Click to fade in demo</button><br><br>
+        <button id="out">Click to fade out demo</button><br><br>
+        <button id="toggle">Click to toggle demo</button><br><br>
+        <button id="to">Click to fade to a given opacity</button><br><br>
+        <div id="demo"></div><br>
+
+    </div>
+</body>
+</html>
