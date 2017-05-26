@@ -151,13 +151,13 @@
 | fadeTo()      | Fades in/out the selected elements to a given opacity                        |
 | fadeToggle()  | Toggles between the fadeIn() and fadeOut() methods                           |
 | finish()      | Stops, removes and completes all queued animations for the selected elements |
-| :exclamation:hide()        | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
 | queue()       | Shows the queued functions on the selected elements                          |
-| :exclamation:show()        | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
 | slideDown()   | Slides-down (shows) the selected elements                                    |
 | slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
 | slideUp()     | Slides-up (hides) the selected elements                                      |
 | stop()        | Stops the currently running animation for the selected elements              |
+| :exclamation:hide()      | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
+| :exclamation:show()      | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
 | :exclamation:toggle()    | Toggles between the hide() and show() methods    :point_right:$(selector).toggle(speed,callback);|
 
 
