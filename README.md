@@ -1,5 +1,27 @@
 # About-jQuery
 
+## :yellow_heart:jQuery Effect Methods
+
+| Method        | Description                                                                  |
+|---------------|------------------------------------------------------------------------------|
+| animate()     | Runs a custom animation on the selected elements                             |
+| clearQueue()  | Removes all remaining queued functions from the selected elements            |
+| delay()       | Sets a delay for all queued functions on the selected elements               |
+| dequeue()     | Removes the next function from the queue, and then executes the function     |
+| finish()      | Stops, removes and completes all queued animations for the selected elements |
+| queue()       | Shows the queued functions on the selected elements                          |
+| slideDown()   | Slides-down (shows) the selected elements                                    |
+| slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
+| slideUp()     | Slides-up (hides) the selected elements                                      |
+| stop()        | Stops the currently running animation for the selected elements              |
+| :exclamation:hide()      | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
+| :exclamation:show()      | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
+| :exclamation:toggle()    | Toggles between the hide() and show() methods    :point_right:$(selector).toggle(speed,callback);|
+| :grey_exclamation:fadeIn()      | Fades in the selected elements                                               |
+| :grey_exclamation:fadeOut()     | Fades out the selected elements                                              |
+| :grey_exclamation:fadeToggle()  | Toggles between the fadeIn() and fadeOut() methods                           |
+| :grey_exclamation:fadeTo()      | Fades in/out the selected elements to a given opacity :point_right:$(selector).fadeTo(speed,opacity,callback);  |
+
 ## :yellow_heart:jQuery Selectors
 
 | Selector             | Example                    | Selects                                                                                                         |
@@ -138,27 +160,6 @@
 | unload()                              | Removed in version 3.0. Attaches an event handler to the unload event                                                                               |
 
 
-## :yellow_heart:jQuery Effect Methods
-
-| Method        | Description                                                                  |
-|---------------|------------------------------------------------------------------------------|
-| animate()     | Runs a custom animation on the selected elements                             |
-| clearQueue()  | Removes all remaining queued functions from the selected elements            |
-| delay()       | Sets a delay for all queued functions on the selected elements               |
-| dequeue()     | Removes the next function from the queue, and then executes the function     |
-| fadeIn()      | Fades in the selected elements                                               |
-| fadeOut()     | Fades out the selected elements                                              |
-| fadeTo()      | Fades in/out the selected elements to a given opacity                        |
-| fadeToggle()  | Toggles between the fadeIn() and fadeOut() methods                           |
-| finish()      | Stops, removes and completes all queued animations for the selected elements |
-| queue()       | Shows the queued functions on the selected elements                          |
-| slideDown()   | Slides-down (shows) the selected elements                                    |
-| slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
-| slideUp()     | Slides-up (hides) the selected elements                                      |
-| stop()        | Stops the currently running animation for the selected elements              |
-| :exclamation:hide()      | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
-| :exclamation:show()      | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
-| :exclamation:toggle()    | Toggles between the hide() and show() methods    :point_right:$(selector).toggle(speed,callback);|
 
 
 
