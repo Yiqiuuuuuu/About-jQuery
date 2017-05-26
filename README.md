@@ -7,7 +7,7 @@
 | .class               | $(".intro")                | All elements with class="intro"                                                                                 |
 | .class,.class        | $(".intro,.demo")          | All elements with the class "intro" or "demo"                                                                   |
 | element              | $("p")                     | All p elements                                                                                                |
-| el1,el2,el3          | $("h1,div,p")              | All h1 div p elements                                                                              |
+| el1,el2,el3          | $("h1,div,p")              | All \<h1> div p elements                                                                              |
 |                      |                            |                                                                                                                 |
 | :first               | $("p:first")               | The first p element                                                                                           |
 | :last                | $("p:last")                | The last p element                                                                                            |
@@ -51,7 +51,7 @@
 | [attribute=value]    | $("[href='default.htm']")  | All elements with a href attribute value equal to "default.htm"                                                 |
 | [attribute!=value]   | $("[href!='default.htm']") | All elements with a href attribute value not equal to "default.htm"                                             |
 | [attribute$=value]   | $("[href$='.jpg']")        | All elements with a href attribute value ending with ".jpg"                                                     |
-| [attribute\|=value]   | $("[title|='Tomorrow']")   | All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen |
+| [attribute\|=value]   | $("[title\|='Tomorrow']")   | All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen |
 | [attribute^=value]   | $("[title^='Tom']")        | All elements with a title attribute value starting with "Tom"                                                   |
 | [attribute~=value]   | $("[title~='hello']")      | All elements with a title attribute value containing the specific word "hello"                                  |
 | [attribute*=value]   | $("[title*='hello']")      | All elements with a title attribute value containing the word "hello"                                           |
