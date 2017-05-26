@@ -158,7 +158,7 @@
 | slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
 | slideUp()     | Slides-up (hides) the selected elements                                      |
 | stop()        | Stops the currently running animation for the selected elements              |
-| <font color="#ff1a8c">toggle()</font>     | Toggles between the hide() and show() methods    <font color="#ff1a8c">$(selector).toggle(speed,callback);<font>                              |
+| <span style="color:#ff1a8c">toggle()</span>     | Toggles between the hide() and show() methods    <font color="#ff1a8c">$(selector).toggle(speed,callback);<font>                              |
 
 
 
