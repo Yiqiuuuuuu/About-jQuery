@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#demo1").click(function(){
+        $("#down").slideDown("slow");
+    });
+    
+    $("#demo2").click(function(){
+        $("#up").slideUp("fast")
+    });
+    
+    $("#demo3").click(function(){
+        $("#toggle").slideToggle("2000");
+    })
+});
+</script>
+ 
+    <!-- BEGIN style -->
+    <style>
+        .container {
+            width:60%;
+            margin:auto;
+            display:block;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
+            font-size: 20px;
+            padding:5px;
+        }
+        #demo1, #demo2, #demo3,
+        #down, #up, #toggle{
+            background-color: #e085c2;
+            width: 50%;
+            text-align: center;
+            padding:10px;
+            border: solid 1px black;
+        }
+        #down {
+            display:none;
+            border-top: none;
+        }
+        #up, #toggle { border-top: none;}
+        
+    </style>
+    <!-- END style -->
+    
+</head>
+    
+<body>
+    <div class="container">
+        <p class="notes">Notes:</p>
+        <ul>
+            <li>$(selector).slideDown(speed,callback);</li>
+            <li>$(selector).slideUp(speed,callback);</li>
+            <li>$(selector).slideToggle(speed,callback);</li>
+        </ul>
+        
+        <p class="notes">Explanations:</p>
+        <ul>
+            <li>speed parameter: "slow", "fast", or milliseconds.</li>
+            <li>callback parameter: a function to be executed after toggle() completes.</li>
+        </ul>
+        
+        <p class="notes">Examples:</p><br><br>
+        <div id="demo1">Click to slide down panel</div>
+        <div id="down">- So, Mr. Abha, you say that you are a software engineer. Do you know Microsoft Office?<br>- If you give me the address, I will go there, Sir.</div>
+        
+        <br><br>
+        <div id="demo2">Click to slide up panel</div>
+        <div id="up">- So, Mr. Abha, you say that you are a software engineer. Do you know Microsoft Office?<br>- If you give me the address, I will go there, Sir.</div>
+        
+        <br><br>
+        <div id="demo3">Click to toggle panel</div>
+        <div id="toggle">- So, Mr. Abha, you say that you are a software engineer. Do you know Microsoft Office?<br>- If you give me the address, I will go there, Sir.</div>
+        
+    </div>
+</body>
+</html>
+
+
