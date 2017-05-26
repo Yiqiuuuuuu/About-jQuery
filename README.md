@@ -7,7 +7,7 @@
 | .class               | $(".intro")                | All elements with class="intro"                                                                                 |
 | .class,.class        | $(".intro,.demo")          | All elements with the class "intro" or "demo"                                                                   |
 | element              | $("p")                     | All <p> elements                                                                                                |
-| el1,el2,el3          | $("h1,div,p")              | All <h1>, <div> and <p> elements                                                                                |
+| el1,el2,el3          | $("h1,div,p")              | All <h1> <div> <p> elements                                                                                |
 |                      |                            |                                                                                                                 |
 | :first               | $("p:first")               | The first <p> element                                                                                           |
 | :last                | $("p:last")                | The last <p> element                                                                                            |
@@ -35,7 +35,7 @@
 | :lt(no)              | $("ul li:lt(3)")           | List elements with an index less than 3                                                                         |
 | :not(selector)       | $("input:not(:empty)")     | All input elements that are not empty                                                                           |
 |                      |                            |                                                                                                                 |
-| :header              | $(":header")               | All header elements <h1>, <h2> ...                                                                              |
+| :header              | $(":header")               | All header elements <h1> <h2> ...                                                                              |
 | :animated            | $(":animated")             | All animated elements                                                                                           |
 | :focus               | $(":focus")                | The element that currently has focus                                                                            |
 | :contains(text)      | $(":contains('Hello')")    | All elements which contains the text "Hello"                                                                    |
