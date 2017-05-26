@@ -7,7 +7,7 @@
 | .class               | $(".intro")                | All elements with class="intro"                                                                                 |
 | .class,.class        | $(".intro,.demo")          | All elements with the class "intro" or "demo"                                                                   |
 | element              | $("p")                     | All p elements                                                                                                |
-| el1,el2,el3          | $("h1,div,p")              | All <h1> <div> <p> elements                                                                              |
+| el1,el2,el3          | $("h1,div,p")              | All h1 div p elements                                                                              |
 |                      |                            |                                                                                                                 |
 | :first               | $("p:first")               | The first p element                                                                                           |
 | :last                | $("p:last")                | The last p element                                                                                            |
@@ -25,10 +25,10 @@
 | :only-child          | $("p:only-child")          | All p elements that are the only child of their parent                                                        |
 | :only-of-type        | $("p:only-of-type")        | All p elements that are the only child, of its type, of their parent                                          |
 |                      |                            |                                                                                                                 |
-| parent > child       | $("div > p")               | All p> elements that are a direct child of a div element                                                     |
-| parent descendant    | $("div p")                 | All p> elements that are descendants of a div element                                                        |
-| element + next       | $("div + p")               | The p> element that are next to each div elements                                                            |
-| element ~ siblings   | $("div ~ p")               | All p> elements that are siblings of a div element                                                           |
+| parent > child       | $("div > p")               | All p elements that are a direct child of a div element                                                     |
+| parent descendant    | $("div p")                 | All p elements that are descendants of a div element                                                        |
+| element + next       | $("div + p")               | The p element that are next to each div elements                                                            |
+| element ~ siblings   | $("div ~ p")               | All p elements that are siblings of a div element                                                           |
 |                      |                            |                                                                                                                 |
 | :eq(index)           | $("ul li:eq(3)")           | The fourth element in a list (index starts at 0)                                                                |
 | :gt(no)              | $("ul li:gt(3)")           | List elements with an index greater than 3                                                                      |
@@ -51,7 +51,7 @@
 | [attribute=value]    | $("[href='default.htm']")  | All elements with a href attribute value equal to "default.htm"                                                 |
 | [attribute!=value]   | $("[href!='default.htm']") | All elements with a href attribute value not equal to "default.htm"                                             |
 | [attribute$=value]   | $("[href$='.jpg']")        | All elements with a href attribute value ending with ".jpg"                                                     |
-| [attribute|=value]   | $("[title|='Tomorrow']")   | All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen |
+| [attribute\|=value]   | $("[title|='Tomorrow']")   | All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen |
 | [attribute^=value]   | $("[title^='Tom']")        | All elements with a title attribute value starting with "Tom"                                                   |
 | [attribute~=value]   | $("[title~='hello']")      | All elements with a title attribute value containing the specific word "hello"                                  |
 | [attribute*=value]   | $("[title*='hello']")      | All elements with a title attribute value containing the word "hello"                                           |
