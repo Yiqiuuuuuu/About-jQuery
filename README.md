@@ -138,7 +138,7 @@
 | unload()                              | Removed in version 3.0. Attaches an event handler to the unload event                                                                               |
 
 
-## jQuery Effect Methods
+## :yellow_heart:jQuery Effect Methods
 
 | Method        | Description                                                                  |
 |---------------|------------------------------------------------------------------------------|
