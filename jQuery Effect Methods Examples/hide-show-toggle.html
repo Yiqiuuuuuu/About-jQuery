@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- BEGIN script -->
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#demo").hide("slow", function(){
+                    alert("The paragraph is now hidden with a speed parameter'slow'");
+                });
+            });
+            $("#show").click(function(){
+                $("#demo").show("fast",function(){
+                    alert("The paragraph is now shown with a speed parameter'fast'");
+                });
+            });
+            $("#toggle").click(function(){
+                $("#demo").toggle(5000);
+            })
+        });
+    </script>
+    <!-- END script -->
+    <style>
+        .container {
+            width:50%;
+            margin:auto;
+            display:block;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        p.notesA {
+            color:#e085c2;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        button {
+            border-radius: 8px;    
+        }
+        
+    </style>
+</head>
+    
+    
+<body>
+    <div class="container">
+        <p class="notes">Notes:<br>
+            $(selector).hide(speed,callback);<br>
+            $(selector).show(speed,callback);<br>
+            $(selector).toggle(speed,callback);
+        </p>
+        
+        <p class="notesA"> speed parameter: "slow", "fast", or milliseconds.<br>
+            callback parameter: a function to be executed after toggle() completes.
+        </p>
+        
+        <p id="demo">If I click on the "Hide" button, this paragraph will disappear.</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+    </div>
+
+</body>
+</html>
