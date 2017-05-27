@@ -28,11 +28,19 @@
                 });
             });
             
+            $("#D").click(function(){
+                var div = $("#demo");
+                div.animate({left: '200px'}, "slow");
+                div.animate({fontSize: '35px'}, "slow");
+            }); 
+            
             $("#redo").click(function(){
                 $("#demo").animate({
-                    height:'30px',
-                    width:'30px',
-                    left:'0'
+                    height:'80px',
+                    width:'80px',
+                    left:'0',
+                    background: '#d65cad',
+                    fontSize:'20px'
                 })
             })
 
@@ -96,9 +104,10 @@
         <button id="A">Manipulate Multiple Properties</button>
         <button id="B">Using Relative Values</button>
         <button id="C">Using Pre-defined Values:"show"/"hide"/"toggle"</button>
+        <button id="D">Uses Queue Functionality</button>
         <br><br>
         
-        <div id="demo" style="background:#d65cad;height:30px;width:30px;position:absolute;"></div>
+        <div id="demo" style="background:#d65cad;height:80px;width:80px;position:absolute;font-size: 20px">jQuery</div>
 
     </div>
 
