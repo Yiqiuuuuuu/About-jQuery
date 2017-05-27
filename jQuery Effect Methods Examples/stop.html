@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- BEGIN script -->
+    <script>
+        $(document).ready(function(){
+            $("#demo").click(function(){
+                $("#demoContent").slideDown(5000);
+            });
+            
+            $("button").click(function(){
+                $("#demoContent").stop();
+            });
+        });
+    </script>
+    <!-- END script -->
+    
+    <!-- BEGIN style -->
+    <style>
+        .container {
+            width:50%;
+            margin:auto;
+            display:block;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
+            font-size: 20px;
+            padding:5px;
+            line-height: 30px;
+        }
+        button {
+            border-radius: 8px;    
+        }
+        #demo, #demoContent {
+            background-color: #e085c2;
+            width: 50%;
+            text-align: center;
+            padding:10px;
+            border: solid 1px black;
+        }
+        #demoContent {
+            display:none;
+            border-top: none;
+        }
+        
+    </style>
+    <!-- END style -->
+</head>
+    
+    
+<body>
+    <div class="container">
+        <p class="notes">Notes:</p>
+        <ul>
+            <li>$(selector).stop(stopAll,goToEnd);</li>
+        </ul>
+        
+        <p class="notes">Explanations:</p>
+        <ul>
+            <li>The stop() method works for all jQuery effect functions,</li>
+            <li>stopAll parameter: specifies whether also the animation queue should be cleared or not. Default is false, which means that only the active animation will be stopped, allowing any queued animations to be performed afterwards.</li>
+            <li>goToEnd parameter: specifies whether or not to complete the current animation immediately; default is false.</li>
+        </ul>
+        
+        <p class="notes">Examples:</p><br>
+        
+        <button>Stop sliding</button><br><br>
+
+        <div id="demo">Click to slide down panel</div>
+        <div id="demoContent">JQuery is interesting.</div>
+    </div>
+
+</body>
+</html>
