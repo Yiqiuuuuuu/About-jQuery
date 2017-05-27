@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- BEGIN script -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#demo").css("color", "#e699cc")
+                    .slideUp(2000)
+                    .slideDown(2000);
+            });
+        });
+    </script>
+    <!-- END script -->
+    
+    <!-- BEGIN style -->
+    <style>
+        .container {
+            width:50%;
+            margin:auto;
+            display:block;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
+            font-size: 20px;
+            padding:5px;
+        }
+        button {
+            border-radius: 8px;
+            padding:10px;
+        }
+        #demo {
+            font-size: 15px;
+            font-weight: 800;
+        }
+        
+    </style>
+    <!-- END style -->
+</head>
+    
+    
+<body>
+    <div class="container">
+        <p class="notes">Notes:</p>
+        <ul>
+            <li>jQuery - Chaining</li>
+        </ul>
+        
+        <p class="notes">Explanations:</p>
+        <ul>
+            <li>chaining: a technique that allows us to run multiple jQuery commands, one after the other, on the same element(s).</li>
+        </ul>
+            
+        
+        <p class="notes">Examples:</p>
+        <p id="demo">JQuery is fun.</p>
+        <button>Hide</button>
+    </div>
+
+</body>
+</html>
