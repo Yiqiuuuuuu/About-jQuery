@@ -4,16 +4,16 @@
 
 | Method        | Description                                                                  |
 |---------------|------------------------------------------------------------------------------|
-| animate()     | Runs a custom animation on the selected elements                             |
+| :smiley_cat:animate()     | Runs a custom animation on the selected elements                             |
 | clearQueue()  | Removes all remaining queued functions from the selected elements            |
 | delay()       | Sets a delay for all queued functions on the selected elements               |
 | dequeue()     | Removes the next function from the queue, and then executes the function     |
 | finish()      | Stops, removes and completes all queued animations for the selected elements |
 | queue()       | Shows the queued functions on the selected elements                          |
-| slideDown()   | Slides-down (shows) the selected elements                                    |
-| slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
-| slideUp()     | Slides-up (hides) the selected elements                                      |
-| stop()        | Stops the currently running animation for the selected elements              |
+| :droplet:slideDown()   | Slides-down (shows) the selected elements                                    |
+| :droplet:slideToggle() | Toggles between the slideUp() and slideDown() methods                        |
+| :droplet:slideUp()     | Slides-up (hides) the selected elements                                      |
+| :thought_balloon:stop()        | Stops the currently running animation for the selected elements              |
 | :exclamation:hide()      | Hides the selected elements :point_right:$(selector).hide(speed,callback);   |
 | :exclamation:show()      | Shows the selected elements :point_right:$(selector).show(speed,callback);   |
 | :exclamation:toggle()    | Toggles between the hide() and show() methods    :point_right:$(selector).toggle(speed,callback);|
