@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- BEGIN script -->
+    <script>
+        $(document).ready(function(){
+            $("#A").click(function(){
+                $("#demo").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '100px',
+                    width: '100px'
+                });
+            });
+
+            $("#B").click(function(){
+                $("#demo").animate({
+                    left: '+=250px',
+                    height: '+=50px',
+                    width: '+=50px'
+                });
+            });
+            
+            $("#C").click(function(){
+                $("#demo").animate({
+                    height: 'toggle'
+                });
+            });
+            
+            $("#redo").click(function(){
+                $("#demo").animate({
+                    height:'30px',
+                    width:'30px',
+                    left:'0'
+                })
+            })
+
+        });
+    </script>
+    <!-- END script -->
+    
+    <!-- BEGIN style -->
+    <style>
+        .container {
+            width:80%;
+            margin:auto;
+            display:block;
+            position:relative;
+        }
+        p.notes {
+            color:#d65cad;
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        ul {
+            padding:5px;
+            margin: 0;
+        }
+        li {
+            font-size: 20px;
+            padding:5px;
+            line-height: 30px;
+        }
+        button {
+            border-radius: 8px;
+            font-size:20px;
+        }
+        
+    </style>
+    <!-- END style -->
+</head>
+    
+    
+<body>
+    <div class="container">
+        <p class="notes">Notes:</p>
+        <ul>
+            <li>$(selector).animate({params},speed,callback);</li>
+        </ul>
+        
+        <p class="notes">Explanations:</p>
+        <ul>
+            <li><b>required</b> params parameter: defines the CSS properties to be animated.
+            <li>speed parameter: specifies the duration of the effect (values: "slow", "fast", or milliseconds).</li>
+            <li>callback parameter: a function to be executed after the animation completes.</li>
+            <li>By default, all HTML elements have a static position, and cannot be moved.To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute.</li>
+            <li>animate() can manipulate ALL CSS properties-there is one important thing to remember: all property names must be camel-cased when used with the animate() method; you will need to write paddingLeft instead of padding-left, marginRight instead of margin-right, and so on. 
+            <li>Also, color animation is not included in the core jQuery library.If you want to animate color, you need to download the Color Animations plugin from jQuery.com.</li>
+        </ul>
+            
+        
+        <p class="notes">Examples:</p><br><button id="redo">Reset to defaults</button><br><br>
+        <button id="A">Manipulate Multiple Properties</button>
+        <button id="B">Using Relative Values</button>
+        <button id="C">Using Pre-defined Values:"show"/"hide"/"toggle"</button>
+        <br><br>
+        
+        <div id="demo" style="background:#d65cad;height:30px;width:30px;position:absolute;"></div>
+
+    </div>
+
+</body>
+</html>
